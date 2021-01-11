@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/round_borders"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/path"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="1dp"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <TextView
+            android:id="@+id/btnplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="play"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:background="@color/color_blue"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_movie_title"
+                style="@style/TopicTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Movie Title"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_release_date"
+                style="@style/NormalTextStyle"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Release Date"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tv_other_details"
+                style="@style/NormalTextStyle"
+                android:layout_marginTop="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Details"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
